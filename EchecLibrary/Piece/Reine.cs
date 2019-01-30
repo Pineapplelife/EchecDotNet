@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EchecLibrary {
-
-    class Reine : Piece {
-
+namespace Fr.Coding.ChessMate.Models
+{
+    class Reine : Piece
+    {
+        // TODO remplir les conditions de deplacement 
+        public override bool IsValideMove(int xStart, int yStart, int xEnd, int yEnd)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
