@@ -8,12 +8,12 @@ namespace ChessMateWeb.Models
 {
     public class Partie
     {
-        public Partie {
-            }
-
         Piece[,] echiquier;
         bool MainCourante = true;
 
-        public void Jouer (int xStart, int yStart, int xEnd, int yEnd )
+        public void Jouer(int xStart, int yStart, int xEnd, int yEnd)
+        {
+
+        }
     }
 }
