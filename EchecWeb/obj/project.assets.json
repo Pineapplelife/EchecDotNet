@@ -12564,11 +12564,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
+      "projectUniqueName": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier repo\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
       "projectName": "EchecWeb",
-      "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
+      "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier repo\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
       "packagesPath": "C:\\Users\\mguer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\obj\\",
+      "outputPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier repo\\EchecDotNet\\EchecWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12587,8 +12587,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
-              "projectPath": "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
+            "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier repo\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
+              "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier repo\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
             }
           }
         }

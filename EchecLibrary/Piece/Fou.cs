@@ -10,7 +10,7 @@ namespace Fr.Coding.ChessMate.Models
         private int testY;
 
         // TODO remplir les conditions de deplacement 
-        public override bool IsValideMove(int xStart, int yStart, int xEnd, int yEnd)
+        public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)
         {
             testX = xStart - yStart;
             testY = xEnd - yEnd;

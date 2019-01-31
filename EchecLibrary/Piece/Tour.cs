@@ -7,7 +7,7 @@ namespace Fr.Coding.ChessMate.Models
     public class Tour : Piece
     {
         // TODO remplir les conditions de deplacement 
-        public override bool IsValideMove(int xStart, int yStart, int xEnd, int yEnd)
+        public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)
         {
 
             //cliquer sur piece pour recuperer coordonnee de depart,
