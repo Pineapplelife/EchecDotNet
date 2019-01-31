@@ -33,5 +33,31 @@ namespace Fr.Coding.ChessMate.Models {
                 return false;
             }
         }
+        public override bool IsTrajectoireLibre(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
+        {
+            //COULEUR PION == TRUE
+            if (echiquier[xStart, yStart + 1] == null)
+            {
+                return true;
+            }
+            //CONLEUR PION == FALSE
+            else if (echiquier[xStart, yStart - 1] == null)
+            {
+                return true;
+            }
+            else if (echiquier[yStart + 1, xStart] == null && echiquier[yStart, xStart + 1] == null)
+            {
+                return true;
+            }
+            else if (echiquier[yStart + 1, xStart] == null && echiquier[yStart, xStart - 1] == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            //DELIMITATION
+        }
+        }
     }
-}

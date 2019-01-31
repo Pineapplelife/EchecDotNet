@@ -15,7 +15,7 @@ namespace Fr.Coding.ChessMate.Models
             testX = xStart - yStart;
             testY = xEnd - yEnd;
 
-            if(testX == testY)
+            if (testX == testY)
             {
                 return true;
             }
@@ -27,6 +27,159 @@ namespace Fr.Coding.ChessMate.Models
             {
                 return false;
             }
+        }
+        public override bool IsTrajectoireLibre(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
+        {
+            if (0 < xEnd && xEnd < 7)
+            {
+                if (xStart < xEnd)
+                {
+                    while (xStart < xEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart++;
+                            continue;
+
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
+                    }
+                }
+                else if (xStart > xEnd)
+                {
+                    while (xStart > xEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart--;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                return false;
+            }
+            if (0 < yStart && yStart < 7)
+            {
+                if (yStart < yEnd)
+                {
+                    while (yStart < yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            yStart++;
+                            continue;
+
+                        }
+                        else
+                        {
+                            return false;
+                        }
+
+                    }
+                }
+                else if (yStart > yEnd)
+                {
+                    while (yStart > yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            yStart--;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                return false;
+            }
+            if (0 < xEnd && xEnd < 7 && 0 < yEnd && yEnd < 7)
+            {
+                //Diagonale Haut Droit
+                if (xStart < xEnd && yStart < yEnd)
+                {
+                    while (xStart < xEnd && yStart < yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart++;
+                            yStart++;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                //Diagonale Bas Gauche
+                else if (xStart > xEnd && yStart > yEnd)
+                {
+                    while (xStart > xEnd && yStart > yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart--;
+                            yStart--;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                //
+                else if (xStart > xEnd && yStart < yEnd)
+                {
+                    while (xStart > xEnd && yStart < yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart--;
+                            yStart++;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                //
+                else if (xStart < xEnd && yStart > yEnd)
+                {
+                    while (xStart < xEnd && yStart > yEnd)
+                    {
+                        if (echiquier[xStart, yStart] == null)
+                        {
+                            xStart++;
+                            yStart--;
+                            continue;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
         }
     }
 }
