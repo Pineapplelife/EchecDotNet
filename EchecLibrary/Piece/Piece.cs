@@ -15,5 +15,18 @@ namespace Fr.Coding.ChessMate.Models
             return true;
         }
 
+        //Méthode qui vérifie si il y a un ennemi sur la case d'arrivée et dans ce cas là appeler la méthode Manger() (nom provisoire) 
+        public virtual bool IsArriveeOnEnnemy(int xEnd, int yEnd, Piece[,] echiquier) {
+            
+            if(echiquier[xEnd, yEnd].couleur != this.couleur) {
+                Console.WriteLine("MIAM");
+                //Manger();
+                return true;
+            }
+            else {
+                Console.WriteLine("Déplacement impossible");
+                return false;
+            }
+        }
     }
 }
