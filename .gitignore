@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -7,3 +7,17 @@
 \.vs/EchecDotNet/v15/
 
 EchecLibrary/obj/
+
+EchecWeb/properties
+
+EchecWeb/Dépendances
+
+EchecWeb/bin
+
+EchecWeb/appsettings.Development.json
+
+EchecWeb/appsettings.json
+
+EchecWeb/obj
+
+EchecWeb/wwwroot/lib
