@@ -23,3 +23,9 @@ EchecWeb/obj
 EchecWeb/wwwroot/lib
 
 EchecConsole
+
+.vs/config/applicationhost.config
+
+EchecLibrary/bin
+
+EchecWeb/bin
