@@ -210,7 +210,7 @@
       },
       "EchecLibrary/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "compile": {
           "bin/placeholder/EchecLibrary.dll": {}
         },
@@ -704,23 +704,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Neren\\.nuget\\packages\\": {},
+    "C:\\Users\\Nerenkay\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
+      "projectUniqueName": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
       "projectName": "EchecConsole",
-      "projectPath": "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
-      "packagesPath": "C:\\Users\\Neren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecConsole\\obj\\",
+      "projectPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
+      "packagesPath": "C:\\Users\\Nerenkay\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Neren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nerenkay\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
-              "projectPath": "C:\\Users\\Neren\\Desktop\\DotNetCours\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
+            "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
+              "projectPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
             }
           }
         }
@@ -761,16 +761,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Le projet EchecLibrary n'est pas compatible avec netcoreapp2.1 (.NETCoreApp,Version=v2.1). Le projet EchecLibrary prend en charge : netcoreapp2.2 (.NETCoreApp,Version=v2.2)",
-      "libraryId": "EchecLibrary",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }
