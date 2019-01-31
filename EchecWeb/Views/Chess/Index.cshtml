@@ -1,0 +1,52 @@
+﻿@using Fr.Coding.ChessMate.Models;
+@using Newtonsoft.Json;
+@{
+
+    ViewData["Title"] = "Plateau";
+    Piece[,] echiquier = (Piece[,])ViewData["plateau"];
+    //string deseria = (string)ViewData["plateau"];
+    //Piece[,] echiquier = JsonConvert.DeserializeObject<Piece[,]>(deseria); ;
+    //echiquier = JsonConvert.DeserializeObject(echiquier);
+}
+
+<h2>Plateau</h2>
+    @for (int i = 0; i < 8; i++)
+    {
+        <div>
+            @for (int y = 0; y < 8; y++)
+                {
+                    if (echiquier[i, y] is null)
+                {
+                    <button class="case">|^|</button>
+                }
+                else if (echiquier[i, y] is Fou)
+                {
+                    <button class="case">|F|</button>
+                }
+                else if (echiquier[i, y] is Cavalier)
+                {
+                    <button class="case">|C|</button>
+                }
+                else if (echiquier[i, y] is Tour)
+                {
+                    <button class="case">|T|</button>
+                }
+                else if (echiquier[i, y] is Pion)
+                {
+                    <button class="case">|P|</button>
+                }
+                else if (echiquier[i, y] is Roi)
+                {
+                    <button class="case">|K|</button>
+                }
+                else if (echiquier[i, y] is Reine)
+                {
+                    <button class="case">|Q|</button>
+                }
+                }
+</div>
+
+
+
+}
+

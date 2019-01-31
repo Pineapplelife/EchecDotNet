@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fr.Coding.ChessMate.Models
 {
-    class Tour : Piece
+    public class Tour : Piece
     {
         // TODO remplir les conditions de deplacement 
         public override bool IsValideMove(int xStart, int yStart, int xEnd, int yEnd)

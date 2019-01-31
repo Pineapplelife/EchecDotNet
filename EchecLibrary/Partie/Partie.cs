@@ -4,16 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Fr.Coding.ChessMate.Models;
 
-namespace ChessMateWeb.Models
+namespace Fr.Coding.ChessMate
 {
     public class Partie
     {
-        Piece[,] echiquier;
         bool MainCourante = true;
+        public Plateau plateau { get; set; }
+        public Partie()
+        {
+            plateau = new Plateau();
+        }
 
         public void Jouer(int xStart, int yStart, int xEnd, int yEnd)
         {
-
+            
         }
     }
 }
