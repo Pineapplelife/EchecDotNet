@@ -4,7 +4,7 @@ namespace Fr.Coding.ChessMate.Models
 {
     public abstract class Piece
     {
-        bool couleur;
+        public bool couleur { get; set; }
         string nom;
 
         public abstract bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd);

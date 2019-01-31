@@ -11,48 +11,89 @@ namespace Fr.Coding.ChessMate
         public Plateau()
         {
             echiquier = new Piece[8, 8];
-           pN1= new Pion();
-           pN2= new Pion();
-           pN3= new Pion();
-           pN4= new Pion();
-           pN5= new Pion();
-           pN6= new Pion();
-           pN7= new Pion();
-           pN8= new Pion();
+            pN1= new Pion();
+            pN2= new Pion();
+            pN3= new Pion();
+            pN4= new Pion();
+            pN5= new Pion();
+            pN6= new Pion();
+            pN7= new Pion();
+            pN8= new Pion();
+            pN1.couleur = false;
+            pN2.couleur = false;
+            pN3.couleur = false;
+            pN4.couleur = false;
+            pN5.couleur = false;
+            pN6.couleur = false;
+            pN7.couleur = false;
+            pN8.couleur = false;
 
-           pB1 =new Pion();
-           pB2= new Pion();
-           pB3= new Pion();
-           pB4= new Pion();
-           pB5= new Pion();
-           pB6= new Pion();
-           pB7= new Pion();
-           pB8 = new Pion();
+            pB1 =new Pion();
+            pB2= new Pion();
+            pB3= new Pion();
+            pB4= new Pion();
+            pB5= new Pion();
+            pB6= new Pion();
+            pB7= new Pion();
+            pB8= new Pion();
 
-           cavN1 = new Cavalier();
-           cavN2 = new Cavalier();
+            pB1.couleur = true;
+            pB2.couleur = true;
+            pB3.couleur = true;
+            pB4.couleur = true;
+            pB5.couleur = true;
+            pB6.couleur = true;
+            pB7.couleur = true;
+            pB8.couleur = true;
 
-           cavB1 = new Cavalier();
-           cavB2 = new Cavalier();
+            cavN1 = new Cavalier();
+            cavN2 = new Cavalier();
 
-           fouN1 = new Fou();
-           fouN2 = new Fou();
+            cavN1.couleur = false;
+            cavN2.couleur = false;
 
-           fouB1 = new Fou();
-           fouB2 = new Fou();
+            cavB1 = new Cavalier();
+            cavB2 = new Cavalier();
 
-           tourN1 = new Tour();
-           tourN2 = new Tour();
+            cavB1.couleur = true;
+            cavB2.couleur = true;
 
-           tourB1 = new Tour();
-           tourB2 = new Tour();
+            fouN1 = new Fou();
+            fouN2 = new Fou();
 
+            fouN1.couleur = false;
+            fouN2.couleur = false;
 
-           reineN = new Reine();
-           reineB = new Reine();
+            fouB1 = new Fou();
+            fouB2 = new Fou();
 
-           roiN = new Roi();
-           roiB = new Roi();
+            fouB1.couleur = true;
+            fouB2.couleur = true;
+
+            tourN1 = new Tour();
+            tourN2 = new Tour();
+
+            tourN1.couleur = false;
+            tourN2.couleur = false;
+
+            tourB1 = new Tour();
+            tourB2 = new Tour();
+
+            tourB1.couleur = true;
+            tourB2.couleur = true;
+
+            reineN = new Reine();
+            reineB = new Reine();
+
+            reineN.couleur = false;
+            reineB.couleur = true;
+
+            roiN = new Roi();
+            roiB = new Roi();
+
+            roiN.couleur = false;
+            roiB.couleur = true;
+
             initierPlateau(echiquier);
         }
 
@@ -145,14 +186,14 @@ namespace Fr.Coding.ChessMate
             echiquier[6, 7] = pN8;
 
             //Placement ligne noire
-            echiquier[7, 0] = tourB1;
-            echiquier[7, 1] = cavB1;
-            echiquier[7, 2] = fouB1;
-            echiquier[7, 3] = roiB;
-            echiquier[7, 4] = reineB;
-            echiquier[7, 5] = fouB2;
-            echiquier[7, 6] = cavB2;
-            echiquier[7, 7] = tourB2;
+            echiquier[7, 0] = tourN1;
+            echiquier[7, 1] = cavN1;
+            echiquier[7, 2] = fouN1;
+            echiquier[7, 3] = roiN;
+            echiquier[7, 4] = reineN;
+            echiquier[7, 5] = fouN2;
+            echiquier[7, 6] = cavN2;
+            echiquier[7, 7] = tourN2;
 
 
 

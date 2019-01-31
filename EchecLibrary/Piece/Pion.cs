@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Fr.Coding.ChessMate.Models {
-    class Pion : Piece {
+    public class Pion : Piece {
         private bool firstmove = true;
         public bool othermove = false;
         // TODO remplir les conditions de deplacement 

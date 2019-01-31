@@ -36,8 +36,21 @@ body {
     }
 }
 
-.case{
+img {
     height : 20px;
     width : 20px;
-    background-color : red;
+}
+
+.caseB {
+    height: 50px;
+    width: 50px;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.caseN {
+    height: 50px;
+    width: 50px;
+    background-color: saddlebrown;
+    text-align: center;
 }

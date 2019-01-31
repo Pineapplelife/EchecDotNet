@@ -8,11 +8,11 @@ using Newtonsoft.Json;
 
 namespace EchecWeb.Controllers
 {
-    [Route("partie")]
+    [Route("Chess")]
     public class ChessController : Controller
     {
 
-        [Route("plateau")]
+        [Route("Plateau")]
         public IActionResult Index()
         {
             Partie game = new Partie();

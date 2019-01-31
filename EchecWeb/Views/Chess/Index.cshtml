@@ -9,44 +9,139 @@
     //echiquier = JsonConvert.DeserializeObject(echiquier);
 }
 
-<h2>Plateau</h2>
+<h2 class="antoTest">Plateau</h2>
     @for (int i = 0; i < 8; i++)
     {
         <div>
-            @for (int y = 0; y < 8; y++)
+    @for (int y = 0; y < 8; y++)
+    {
+
+        if ((i + y) % 2 == 0)
+        {
+            if (echiquier[i, y] is null)
+            {
+                <button class="caseB"></button>
+            }
+            else if (echiquier[i, y] != null && echiquier[i, y].couleur)
+            {
+
+                if (echiquier[i, y] is Fou)
                 {
-                    if (echiquier[i, y] is null)
-                {
-                    <button class="case">|^|</button>
-                }
-                else if (echiquier[i, y] is Fou)
-                {
-                    <button class="case">|F|</button>
+                    <button class="caseB"><img src="~/images/Fb.png" /></button>
                 }
                 else if (echiquier[i, y] is Cavalier)
                 {
-                    <button class="case">|C|</button>
+                    <button class="caseB"><img src="~/images/Cb.png" /></button>
                 }
                 else if (echiquier[i, y] is Tour)
                 {
-                    <button class="case">|T|</button>
+                    <button class="caseB"><img src="~/images/Tb.png" /></button>
                 }
                 else if (echiquier[i, y] is Pion)
                 {
-                    <button class="case">|P|</button>
+                    <button class="caseB"><img src="~/images/Pb.png" /></button>
                 }
                 else if (echiquier[i, y] is Roi)
                 {
-                    <button class="case">|K|</button>
+                    <button class="caseB"><img src="~/images/Kb.png" /></button>
                 }
                 else if (echiquier[i, y] is Reine)
                 {
-                    <button class="case">|Q|</button>
+                    <button class="caseB"><img src="~/images/Qb.png" /></button>
                 }
+            }
+            else if (echiquier[i, y] != null && echiquier[i, y].couleur == false)
+            {
+                if (echiquier[i, y] is Fou)
+                {
+                    <button class="caseB"><img src="~/images/Fn.png" /></button>
                 }
-</div>
+                else if (echiquier[i, y] is Cavalier)
+                {
+                    <button class="caseB"><img src="~/images/cn.png" /></button>
+                }
+                else if (echiquier[i, y] is Tour)
+                {
+                    <button class="caseB"><img src="~/images/Tn.png" /></button>
+                }
+                else if (echiquier[i, y] is Pion)
+                {
+                    <button class="caseB"><img src="~/images/Pn.png" /></button>
+                }
+                else if (echiquier[i, y] is Roi)
+                {
+                    <button class="caseB"><img src="~/images/Kn.png" /></button>
+                }
+                else if (echiquier[i, y] is Reine)
+                {
+                    <button class="caseB"><img src="~/images/Qn.png" /></button>
+                }
+            }
+        }
+        else
+        {
+            if (echiquier[i, y] is null)
+            {
+                <button class="caseN"></button>
+            }
+            else if (echiquier[i, y] != null && echiquier[i, y].couleur)
+            {
 
+                if (echiquier[i, y] is Fou)
+                {
+                    <button class="caseN"><img src="~/images/Fb.png" /></button>
+                }
+                else if (echiquier[i, y] is Cavalier)
+                {
+                    <button class="caseN"><img src="~/images/Cb.png" /></button>
+                }
+                else if (echiquier[i, y] is Tour)
+                {
+                    <button class="caseN"><img src="~/images/Tb.png" /></button>
+                }
+                else if (echiquier[i, y] is Pion)
+                {
+                    <button class="caseN"><img src="~/images/Pb.png" /></button>
+                }
+                else if (echiquier[i, y] is Roi)
+                {
+                    <button class="caseN"><img src="~/images/Kb.png" /></button>
+                }
+                else if (echiquier[i, y] is Reine)
+                {
+                    <button class="caseN"><img src="~/images/Qb.png" /></button>
+                }
+            }
+            else if (echiquier[i, y] != null && echiquier[i, y].couleur == false)
+            {
+                if (echiquier[i, y] is Fou)
+                {
+                    <button class="caseN"><img src="~/images/Fn.png" /></button>
+                }
+                else if (echiquier[i, y] is Cavalier)
+                {
+                    <button class="caseN"><img src="~/images/Cn.png" /></button>
+                }
+                else if (echiquier[i, y] is Tour)
+                {
+                    <button class="caseN"><img src="~/images/Tn.png" /></button>
+                }
+                else if (echiquier[i, y] is Pion)
+                {
+                    <button class="caseN"><img src="~/images/Pn.png" /></button>
+                }
+                else if (echiquier[i, y] is Roi)
+                {
+                    <button class="caseN"><img src="~/images/Kn.png" /></button>
+                }
+                else if (echiquier[i, y] is Reine)
+                {
+                    <button class="caseN"><img src="~/images/Qn.png" /></button>
+                }
+            }
+        }
 
-
-}
+        }
+        </div>
+    }
 
