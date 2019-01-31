@@ -19,7 +19,7 @@ namespace Fr.Coding.ChessMate.Models
             {
                 return true;
             }
-            elseif (xStart == xEnd) || (yStart == yEnd)
+            else if (xStart == xEnd || yStart == yEnd)
             {
                 return true;
             }
@@ -27,8 +27,6 @@ namespace Fr.Coding.ChessMate.Models
             {
                 return false;
             }
-
-            throw new NotImplementedException();
         }
     }
 }

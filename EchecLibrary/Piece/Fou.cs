@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,10 +23,6 @@ namespace Fr.Coding.ChessMate.Models
             {
                 return false;
             }
-
-
-
-            throw new NotImplementedException();
         }
     }
 }

@@ -14,18 +14,16 @@ namespace Fr.Coding.ChessMate.Models
             //cliquer sur une case pour recuperer coordonnee d'arrivée
             //comparer et valider si true ou false.
 
-            if (int xStart == int xEnd) || (int yStart == int yEnd)
+            if (xStart == xEnd || yStart == yEnd)
             {
+                Console.WriteLine("Mouvement OK");
                 return true;
-                Console.WriteLine(Mouvement OK);
             }
             else
             {
+                Console.WriteLine("Mouvement Interdit");
                 return false;
-                Console.WriteLine(Mouvement Interdit);
             }
-
-            throw new NotImplementedException();
         }
     }
 }

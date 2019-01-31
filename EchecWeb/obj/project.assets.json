@@ -11804,23 +11804,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nerenkay\\.nuget\\packages\\": {},
+    "C:\\Users\\mguer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
+      "projectUniqueName": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
       "projectName": "EchecWeb",
-      "projectPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
-      "packagesPath": "C:\\Users\\Nerenkay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecWeb\\obj\\",
+      "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\EchecWeb.csproj",
+      "packagesPath": "C:\\Users\\mguer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nerenkay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mguer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11856,6 +11856,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

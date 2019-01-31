@@ -704,23 +704,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nerenkay\\.nuget\\packages\\": {},
+    "C:\\Users\\mguer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
+      "projectUniqueName": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
       "projectName": "EchecConsole",
-      "projectPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
-      "packagesPath": "C:\\Users\\Nerenkay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecConsole\\obj\\",
+      "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecConsole\\EchecConsole.csproj",
+      "packagesPath": "C:\\Users\\mguer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nerenkay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mguer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -733,8 +733,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
-              "projectPath": "C:\\Users\\Nerenkay\\Desktop\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
+            "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj": {
+              "projectPath": "C:\\Users\\mguer\\Desktop\\Coding Factory\\C# .NET\\Echiquier\\EchecDotNet\\EchecLibrary\\EchecLibrary.csproj"
             }
           }
         }
@@ -749,6 +749,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
