@@ -6,10 +6,23 @@ namespace Fr.Coding.ChessMate.Models
 {
     public class Fou : Piece
     {
+        private int testX;
+        private int testY;
+
         // TODO remplir les conditions de deplacement 
         public override bool IsValideMove(int xStart, int yStart, int xEnd, int yEnd)
         {
-            throw new NotImplementedException();
+            testX = xStart - yStart;
+            testY = xEnd - yEnd;
+
+            if (testX == testY)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

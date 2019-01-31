@@ -1,0 +1,3 @@
+C:\Users\mguer\Desktop\Coding Factory\C# .NET\Echiquier\EchecDotNet\Test\obj\Debug\netcoreapp2.2\Test.csproj.CoreCompileInputs.cache
+C:\Users\mguer\Desktop\Coding Factory\C# .NET\Echiquier\EchecDotNet\Test\obj\Debug\netcoreapp2.2\Test.AssemblyInfoInputs.cache
+C:\Users\mguer\Desktop\Coding Factory\C# .NET\Echiquier\EchecDotNet\Test\obj\Debug\netcoreapp2.2\Test.AssemblyInfo.cs
