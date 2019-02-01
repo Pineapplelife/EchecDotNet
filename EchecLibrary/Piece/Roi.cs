@@ -38,42 +38,82 @@ namespace Fr.Coding.ChessMate.Models
                 //SE DEPLACE A DROITE
                 if (echiquier[xStart + 1, yStart] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //SE DEPLACE A GAUCHE
                 else if (echiquier[xStart - 1, yStart] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //SE DEPLACE EN BAS
                 else if (echiquier[xStart, yStart + 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //SE DEPLACE EN HAUT
                 else if (echiquier[xStart, yStart - 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //DIAGONALE BAS DROITE
                 else if (echiquier[xStart + 1, yStart + 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //DIAGONALE HAUT GAUCHE
                 else if (echiquier[xStart - 1, yStart - 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //DIAGONALE HAUT DROITE
                 else if (echiquier[xStart + 1, yStart - 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //DIAGONALE BAS GAUCHE
                 else if (echiquier[xStart - 1, yStart + 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 return true;
             }
