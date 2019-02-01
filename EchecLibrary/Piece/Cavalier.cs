@@ -8,7 +8,7 @@ namespace Fr.Coding.ChessMate.Models
     {
         public Cavalier (bool couleur)
         {
-           couleur = this.Couleur;
+            this.Couleur = couleur;
         }
 
         // TODO remplir les conditions de deplacement 

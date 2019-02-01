@@ -52,6 +52,7 @@ namespace Fr.Coding.ChessMate
 
             roiN = new Roi(false);
             roiB = new Roi(true);
+            roiB.Couleur = true;
 
             initierPlateau(echiquier);
         }

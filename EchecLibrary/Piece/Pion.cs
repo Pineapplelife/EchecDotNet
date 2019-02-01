@@ -9,7 +9,7 @@ namespace Fr.Coding.ChessMate.Models {
 
         public Pion(bool couleur)
         {
-            couleur = this.Couleur;
+            this.Couleur = couleur;
         }
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd) {
