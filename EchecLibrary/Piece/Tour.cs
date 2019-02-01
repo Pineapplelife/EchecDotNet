@@ -27,7 +27,7 @@ namespace Fr.Coding.ChessMate.Models
         }
         public override bool IsTrajectoireLibre(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
         {
-            if (0 < xEnd && xEnd < 7)
+            if (0 < xEnd && xEnd < 7 && this.IsValidMove(xStart, yStart, xEnd, yEnd) == true)
             {
                 if (xStart < xEnd)
                 {

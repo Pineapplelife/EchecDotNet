@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Fr.Coding.ChessMate;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
+using Fr.Coding.ChessMate.Models;
 
 namespace EchecWeb.Controllers
 {
@@ -40,6 +41,8 @@ namespace EchecWeb.Controllers
             coords[0] = i;
             coords[1] = y;
 
+            
+
             // je réécris dans la session :
             string seria = JsonConvert.SerializeObject(coords);
             HttpContext.Session.SetString("listeCoords", seria);
@@ -59,9 +62,14 @@ namespace EchecWeb.Controllers
             coords[2] = i;
             coords[3] = y;
 
+            Piece piece = game.plateau.echiquier[coords[0], coords[1]];
+            piece.deplacer(coords[0], coords[1], coords[2], coords[3],game.plateau.echiquier);
+
             // je réécris dans la session :
             string seria = JsonConvert.SerializeObject(coords);
             HttpContext.Session.SetString("listeCoords", seria);
+
+
             Index();
             return View("Index");
         }
