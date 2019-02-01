@@ -28,5 +28,16 @@ namespace Fr.Coding.ChessMate.Models
                 return false;
             }
         }
+
+        //Methode qui reduit en bouillie les ennemies.
+        //Recuperer les coordonnées, convertir l'objet present sur ces coordonnées en "null"
+        public virtual void Manger(int xEnd, int yEnd, Piece[,]echiquier)
+        {
+            echiquier[xEnd, yEnd] == null;
+            //this.echiquier[xEnd, yEnd] == null;
+
+            //est ce que l'objet sur ces coordonnées devient "null" ?
+            //est ce que si une autre piece arrive sur ces coordonnées, son état sera affecté ?
+        }
     }
 }

@@ -59,5 +59,5 @@ namespace Fr.Coding.ChessMate.Models {
             }
             //DELIMITATION
         }
-        }
     }
+}
