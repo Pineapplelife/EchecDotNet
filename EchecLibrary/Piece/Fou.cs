@@ -9,6 +9,11 @@ namespace Fr.Coding.ChessMate.Models
         private int testX;
         private int testY;
 
+        public Fou(bool couleur)
+        {
+            couleur = this.couleur;
+        }
+
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)
         {
@@ -24,12 +29,18 @@ namespace Fr.Coding.ChessMate.Models
                 return false;
             }
         }
-        public override bool IsTrajectoireLibre(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
-        {
-            if (0 < xEnd && xEnd < 7 && 0 < yEnd && yEnd < 7) {
-                //Diagonale BAS Droit
-                if (xStart < xEnd && yStart < yEnd) {
-                    while (xStart < xEnd && yStart < yEnd) {
+        public override bool IsTrajectoireLibre(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
+
+        {
+
+            if (0 < xEnd && xEnd < 7 && 0 < yEnd && yEnd < 7) {
+
+                //Diagonale BAS Droit
+
+                if (xStart < xEnd && yStart < yEnd) {
+
+                    while (xStart < xEnd && yStart < yEnd) {
+
                         if (echiquier[xStart, yStart] == null) {
                             xStart++;
                             yStart++;
@@ -44,10 +55,14 @@ namespace Fr.Coding.ChessMate.Models
                             }
                         }
                     }
-                }
-                //Diagonale HAUT Gauche
-                else if (xStart > xEnd && yStart > yEnd) {
-                    while (xStart > xEnd && yStart > yEnd) {
+                }
+
+                //Diagonale HAUT Gauche
+
+                else if (xStart > xEnd && yStart > yEnd) {
+
+                    while (xStart > xEnd && yStart > yEnd) {
+
                         if (echiquier[xStart, yStart] == null) {
                             xStart--;
                             yStart--;
@@ -62,10 +77,14 @@ namespace Fr.Coding.ChessMate.Models
                             }
                         }
                     }
-                }
-                //DIAGONALE BAS GAUCHE 
-                else if (xStart > xEnd && yStart < yEnd) {
-                    while (xStart > xEnd && yStart < yEnd) {
+                }
+
+                //DIAGONALE BAS GAUCHE 
+
+                else if (xStart > xEnd && yStart < yEnd) {
+
+                    while (xStart > xEnd && yStart < yEnd) {
+
                         if (echiquier[xStart, yStart] == null) {
                             xStart--;
                             yStart++;
@@ -80,10 +99,14 @@ namespace Fr.Coding.ChessMate.Models
                             }
                         }
                     }
-                }
-                //DIAGONALE HAUT DROIT
-                else if (xStart < xEnd && yStart > yEnd) {
-                    while (xStart < xEnd && yStart > yEnd) {
+                }
+
+                //DIAGONALE HAUT DROIT
+
+                else if (xStart < xEnd && yStart > yEnd) {
+
+                    while (xStart < xEnd && yStart > yEnd) {
+
                         if (echiquier[xStart, yStart] == null) {
                             xStart++;
                             yStart--;

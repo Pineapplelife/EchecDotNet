@@ -66,7 +66,7 @@ namespace EchecWeb.Controllers
 
 
             string deserEchiquier = HttpContext.Session.GetString("echiquier");
-            game.plateau.echiquier = JsonConvert.DeserializeObject<Piece[,]>(deserEchiquier);
+            //game.plateau.echiquier = JsonConvert.DeserializeObject<Piece[,]>(deserEchiquier);
 
             // j'ajoute la nouvelle ville à la liste :
             coords[2] = i;

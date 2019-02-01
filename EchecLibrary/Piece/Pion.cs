@@ -6,6 +6,11 @@ namespace Fr.Coding.ChessMate.Models {
     public class Pion : Piece {
         private bool firstmove = true;
         public bool othermove = false;
+
+        public Pion(bool couleur)
+        {
+            couleur = this.couleur;
+        }
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd) {
             if (this.firstmove == true) {

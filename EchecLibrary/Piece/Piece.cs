@@ -46,15 +46,11 @@ namespace Fr.Coding.ChessMate.Models
         {
             //if (this.IsTrajectoireLibre(xStart, yStart, xEnd, yEnd, echiquier))
             //{
-                echiquier[xEnd, yEnd] = echiquier[xStart, yStart];
-                echiquier[xStart, yStart] = null;
+            echiquier[xEnd, yEnd] = echiquier[xStart, yStart];
+            echiquier[xStart, yStart] = null;
             return echiquier;
             //}
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
-   
->>>>>>> master
+

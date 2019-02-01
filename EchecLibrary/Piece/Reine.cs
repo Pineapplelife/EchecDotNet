@@ -9,6 +9,11 @@ namespace Fr.Coding.ChessMate.Models
         private int testX;
         private int testY;
 
+        public Reine(bool couleur)
+        {
+            couleur = this.couleur;
+        }
+
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)
         {

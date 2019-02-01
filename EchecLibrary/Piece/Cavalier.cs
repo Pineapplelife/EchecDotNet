@@ -6,6 +6,11 @@ namespace Fr.Coding.ChessMate.Models
 {
     public class Cavalier : Piece
     {
+        public Cavalier (bool couleur)
+        {
+           couleur = this.couleur;
+        }
+
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)
         {
