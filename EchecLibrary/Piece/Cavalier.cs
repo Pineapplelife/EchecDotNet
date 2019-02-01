@@ -24,37 +24,77 @@ namespace Fr.Coding.ChessMate.Models
             {
                 if (echiquier[xStart + 2, yStart + 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart + 2, yStart - 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart + 1, yStart + 2] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart + 1, yStart - 2] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 //DELIMITATION
                 //DELIMITATION
                 else if (echiquier[xStart - 2, yStart + 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart - 2, yStart - 1] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart - 1, yStart + 2] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 else if (echiquier[xStart - 1, yStart - 2] != null)
                 {
-                    return false;
+                    if (echiquier[xEnd, yEnd] != null) {
+                        IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    }
+                    else {
+                        return false;
+                    }
                 }
                 return true;
             }
