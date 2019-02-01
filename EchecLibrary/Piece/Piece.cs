@@ -4,8 +4,7 @@ namespace Fr.Coding.ChessMate.Models
 {
     public abstract class Piece
     {
-        public bool couleur { get; set; }
-        string nom;
+        public bool Couleur { get; set; }
 
         public abstract bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd);
 
@@ -19,7 +18,7 @@ namespace Fr.Coding.ChessMate.Models
         public bool IsArriveeOnEnnemy(int xEnd, int yEnd, Piece[,] echiquier)
         {
 
-            if (echiquier[xEnd, yEnd] != null && echiquier[xEnd, yEnd].couleur != this.couleur)
+            if (echiquier[xEnd, yEnd] != null && echiquier[xEnd, yEnd].Couleur != this.Couleur)
             {
                 Console.WriteLine("MIAM");
                 Manger(xEnd, yEnd, echiquier);

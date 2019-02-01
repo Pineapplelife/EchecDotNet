@@ -11,7 +11,7 @@ namespace Fr.Coding.ChessMate.Models
 
         public Roi(bool couleur)
         {
-            couleur = this.couleur;
+            couleur = this.Couleur;
         }
         // TODO remplir les conditions de deplacement 
         public override bool IsValidMove(int xStart, int yStart, int xEnd, int yEnd)

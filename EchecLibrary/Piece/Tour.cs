@@ -8,7 +8,7 @@ namespace Fr.Coding.ChessMate.Models {
 
         public Tour(bool couleur)
         {
-            couleur = this.couleur;
+            couleur = this.Couleur;
         }
 
         // TODO remplir les conditions de deplacement 
