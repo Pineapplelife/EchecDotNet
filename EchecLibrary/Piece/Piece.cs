@@ -16,7 +16,7 @@ namespace Fr.Coding.ChessMate.Models
         }
 
         //Méthode qui vérifie si il y a un ennemi sur la case d'arrivée et dans ce cas là appeler la méthode Manger() (nom provisoire) 
-        public virtual bool IsArriveeOnEnnemy(int xEnd, int yEnd, Piece[,] echiquier) {
+        public bool IsArriveeOnEnnemy(int xEnd, int yEnd, Piece[,] echiquier) {
             
             if(echiquier[xEnd, yEnd].couleur != this.couleur) {
                 Console.WriteLine("MIAM");
@@ -28,7 +28,7 @@ namespace Fr.Coding.ChessMate.Models
                 return false;
             }
         }
-
+        /*
         //Methode qui reduit en bouillie les ennemies.
         //Recuperer les coordonnées, convertir l'objet present sur ces coordonnées en "null"
         public virtual void Manger(int xEnd, int yEnd, Piece[,]echiquier)
@@ -38,6 +38,6 @@ namespace Fr.Coding.ChessMate.Models
 
             //est ce que l'objet sur ces coordonnées devient "null" ?
             //est ce que si une autre piece arrive sur ces coordonnées, son état sera affecté ?
-        }
+        }*/
     }
 }

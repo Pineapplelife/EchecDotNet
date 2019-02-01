@@ -44,7 +44,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
 
                     }
@@ -60,7 +65,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -83,7 +93,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
 
                     }
@@ -99,7 +114,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -123,7 +143,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -140,7 +165,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -157,7 +187,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
@@ -174,7 +209,12 @@ namespace Fr.Coding.ChessMate.Models
                         }
                         else
                         {
-                            return false;
+                            if (echiquier[xEnd, yEnd] != null) {
+                                IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                            }
+                            else {
+                                return false;
+                            }
                         }
                     }
                 }
