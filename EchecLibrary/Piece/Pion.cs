@@ -57,6 +57,7 @@ namespace Fr.Coding.ChessMate.Models {
             {
                 if (echiquier[xEnd, yEnd] != null) {
                     IsArriveeOnEnnemy(xEnd, yEnd, echiquier);
+                    return true;
                 }
                 else {
                     return false;
