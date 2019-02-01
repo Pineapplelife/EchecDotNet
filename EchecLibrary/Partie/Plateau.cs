@@ -176,7 +176,7 @@ namespace Fr.Coding.ChessMate
             echiquier[1, 7] = pB8;
 
             //Placement pions noirs
-            echiquier[6, 0] = pN1;
+            //echiquier[6, 0] = pN1;
             echiquier[6, 1] = pN2;
             echiquier[6, 2] = pN3;
             echiquier[6, 3] = pN4;
