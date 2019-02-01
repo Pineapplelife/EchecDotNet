@@ -30,7 +30,16 @@ namespace EchecWeb
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            // ACTIVATION DES SESSIONS : 
+            services.AddDistributedMemoryCache();
 
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+            });
+            // FIN ACTIVATION DES SESSIONS
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -51,6 +60,9 @@ namespace EchecWeb
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            // ACTIVATION DES SESSIONS :
+            app.UseSession();
+            // FIN ACTIVATION DES SESSIONS
 
             app.UseMvc(routes =>
             {
