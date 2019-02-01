@@ -41,11 +41,11 @@ namespace Fr.Coding.ChessMate.Models
         }
         public void deplacer(int xStart, int yStart, int xEnd, int yEnd, Piece[,] echiquier)
         {
-            if (this.IsTrajectoireLibre( xStart,  yStart,  xEnd,  yEnd, echiquier) && this.IsArriveeOnEnnemy(xEnd, yEnd, echiquier))
-            {
+            //if (this.IsTrajectoireLibre( xStart,  yStart,  xEnd,  yEnd, echiquier))
+            //{
                 echiquier[xEnd, yEnd] = echiquier[xStart, yStart];
                 echiquier[xStart, yStart] = null;
-            }
+            //}
         }
     }
 }

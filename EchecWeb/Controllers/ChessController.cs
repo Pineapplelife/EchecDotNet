@@ -32,6 +32,7 @@ namespace EchecWeb.Controllers
         [Route("plateau/selectStart/{i}/{y}")]
         public IActionResult selectStart(int i, int y)
         {
+            ViewData.Add("echiquier", game.plateau.echiquier);
             // je récupère ma liste dans la session (sous forme de string json):
             string deseria = HttpContext.Session.GetString("listeCoords");
             // je désérialise le json pour reconstiture mon objet :
@@ -46,13 +47,13 @@ namespace EchecWeb.Controllers
             // je réécris dans la session :
             string seria = JsonConvert.SerializeObject(coords);
             HttpContext.Session.SetString("listeCoords", seria);
-            Index();
             return View("SelectionEnd");
         }
 
         [Route("plateau/selectEnd/{i}/{y}")]
         public IActionResult selectEnd(int i, int y)
         {
+            ViewData.Add("echiquier", game.plateau.echiquier);
             // je récupère ma liste dans la session (sous forme de string json):
             string deseria = HttpContext.Session.GetString("listeCoords");
             // je désérialise le json pour reconstiture mon objet :
@@ -69,8 +70,6 @@ namespace EchecWeb.Controllers
             string seria = JsonConvert.SerializeObject(coords);
             HttpContext.Session.SetString("listeCoords", seria);
 
-
-            Index();
             return View("Index");
         }
 
