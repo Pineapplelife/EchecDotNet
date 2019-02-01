@@ -5,21 +5,65 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Fr.Coding.ChessMate;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace EchecWeb.Controllers
 {
-    [Route("Chess")]
+    [Route("chess")]
     public class ChessController : Controller
     {
+        Partie game = new Partie();
+        int[] coords = new int[4];
 
-        [Route("Plateau")]
+        [Route("plateau")]
         public IActionResult Index()
         {
-            Partie game = new Partie();
-            ViewData.Add("plateau", game.plateau.echiquier);
-            //string seria = JsonConvert.SerializeObject(game.plateau.echiquier);
-            
+            ViewData.Add("echiquier", game.plateau.echiquier);
+            //sérialiser la liste des villes :
+            string seria = JsonConvert.SerializeObject(coords);
+            // stockage de la liste dans la session :
+            HttpContext.Session.SetString("listeCoords", seria);
+
+            ViewData.Add("listeCoords", coords);
             return View();
+        }
+
+        [Route("plateau/selectStart/{i}/{y}")]
+        public IActionResult selectStart(int i, int y)
+        {
+            // je récupère ma liste dans la session (sous forme de string json):
+            string deseria = HttpContext.Session.GetString("listeCoords");
+            // je désérialise le json pour reconstiture mon objet :
+            List<int> coords = JsonConvert.DeserializeObject<List<int>>(deseria);
+
+            // j'ajoute la nouvelle ville à la liste :
+            coords[0] = i;
+            coords[1] = y;
+
+            // je réécris dans la session :
+            string seria = JsonConvert.SerializeObject(coords);
+            HttpContext.Session.SetString("listeCoords", seria);
+            Index();
+            return View("SelectionEnd");
+        }
+
+        [Route("plateau/selectEnd/{i}/{y}")]
+        public IActionResult selectEnd(int i, int y)
+        {
+            // je récupère ma liste dans la session (sous forme de string json):
+            string deseria = HttpContext.Session.GetString("listeCoords");
+            // je désérialise le json pour reconstiture mon objet :
+            List<int> coords = JsonConvert.DeserializeObject<List<int>>(deseria);
+
+            // j'ajoute la nouvelle ville à la liste :
+            coords[2] = i;
+            coords[3] = y;
+
+            // je réécris dans la session :
+            string seria = JsonConvert.SerializeObject(coords);
+            HttpContext.Session.SetString("listeCoords", seria);
+            Index();
+            return View("Index");
         }
 
     }
